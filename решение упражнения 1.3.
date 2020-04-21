@@ -1,0 +1,9 @@
+def sum_square(a, b, c):
+  if c > a > b or a > c > b:
+    return (c * c) + (a * a)
+  elif a > b > c or b > a > c:
+    return (a * a) + (b * b)
+  elif b > c > a  or c > b > a:
+    return (b * b) + (c * c)
+  return "None"
+print(sum_square(3, 0, 7))
